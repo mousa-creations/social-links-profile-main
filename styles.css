@@ -1,0 +1,102 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght400;600;700&family=Inter+Serif&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root */
+:root {
+    --Primary-font: 'Inter', sans-serif;
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--White);
+    background-color: var(--Off-Black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Dark-Grey);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+}
+
+.tagline {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--Green);
+    margin-bottom: 25px;
+}
+
+.job {
+    font-size: 12px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 220px;
+    height: 35px;
+    background-color: var(--Grey);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
+    color: var(--White);
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: hsl(75, 94%, 57%);
+    color: var(--Off-Black);
+}
+
+a {
+    text-decoration: none;
+}
+
+span.sr-only {
+    font-size: 12px;
+    font-weight: 700;
+}
